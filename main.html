@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Bannana test</title>
+</head>
+
+<body>
+    <script type="text/javascript" id="" src="file:///E:/python/banana%20code%20help/main.js"></script>
+    <p id="info"></p>
+    <form method="POST">
+        <table style="width:50%">
+            <tr>
+                <th>Unit</th>
+                <th>value</th>
+            </tr>
+           
+            <tr>
+                <td hidden="True"><input></td>
+            </tr>
+            <tr>
+                <td>Centimeters</td>
+                <td align="center"><input type="text" name="Centimeters" size="7" onFocus="ClearForm(this.form)"></td>
+            </tr>
+            <tr>
+                <td>Inches</td>
+                <td align="center"><input type="text" name="Inches" size="7" onFocus="ClearForm(this.form)"></td>
+            </tr>
+            <tr>
+                <td>Bananas</td>
+                <td align="center"><input type="text" name="Bananas" size="7" onFocus="ClearForm(this.form)"></td>
+            </tr>
+            <tr>
+                <td align="center"><input type="button" value="Calculate" onClick="ConvertForm(this.form)"></td>
+            </tr>
+            
+            <tr></tr>
+        </table>
+    </form>
+    <script language="JavaScript">
+        document.forms[0].count = 3;
+        document.forms[0].Centimeters.factor = 1;
+        document.forms[0].Inches.factor = 1/2.54;
+        document.forms[0].Bananas.factor = 1/18;
+    </script>
+</body>
